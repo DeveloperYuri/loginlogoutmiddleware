@@ -14,10 +14,11 @@
         
         <div class="wrapper">
             <div class="title"><span>Forgot Password Page</span></div>
-            <form action="">
+            <form action="{{ url('forgot_post')}}" method="POST">
+                {{ csrf_field() }}
                 <div class="row">
                     <i class="fas fa-user"></i>
-                    <input type="email" value="" placeholder="Email" required name="email">
+                    <input type="email" value="{{ old('email')}}" placeholder="Email" required name="email">
                 </div>
                 
                 <div class="row button">
