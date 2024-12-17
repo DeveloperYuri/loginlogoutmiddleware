@@ -22,7 +22,7 @@ Route::post('login_post', [AuthController::class, 'login_post']);
 
 // Forgot Password
 Route::get('forgot', [AuthController::class, 'forgot']);
-Route::get('forgot+', [AuthController::class, 'forgot']);
+Route::post('forgot_post', [AuthController::class, 'forgot_post']);
 
 // Logout
 Route::get('logout', [AuthController::class, 'logout']);
