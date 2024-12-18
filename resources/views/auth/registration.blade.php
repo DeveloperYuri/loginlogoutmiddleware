@@ -61,10 +61,6 @@
                     </select>
                 </div>
 
-                <div class="pass">
-                    <a href="{{ url('forgot') }}">Forgot Password</a>
-                </div>
-
                 <div class="row button">
                     <input type="submit" value="Registration">
                 </div>
